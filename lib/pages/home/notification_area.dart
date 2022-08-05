@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-import '../theme.dart';
+import '../../theme.dart';
 
-class Header extends StatelessWidget {
+class NotificationArea extends StatelessWidget {
+  const NotificationArea({
+    Key? key,
+    required this.screenSize,
+  }) : super(key: key);
 
-  const Header({super.key});
+  final Size screenSize;
 
   @override
   Widget build(BuildContext context) {
-    Size screenSize = MediaQuery.of(context).size;
-
     return Stack(
       children: <Widget>[
         Container(
@@ -19,7 +22,7 @@ class Header extends StatelessWidget {
             decoration: const BoxDecoration(
                 color: primary,
                 borderRadius:
-                BorderRadius.only(bottomRight: Radius.circular(100))),
+                    BorderRadius.only(bottomRight: Radius.circular(100))),
             child: Container(
               padding: const EdgeInsets.only(
                   top: 19, bottom: 19, right: 25, left: 25),
@@ -56,23 +59,22 @@ class Header extends StatelessWidget {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        const Icon(
-                          Icons.doorbell,
-                          color: Colors.white,
-                          size: 20.0,
+                        IconButton(
+                            onPressed: () {},
+                            icon: SvgPicture.asset("assets/icons/bell.svg")),
+                        const SizedBox(
+                          width: 18,
                         ),
-                        const SizedBox(width: 18,),
                         Container(
                           width: 38,
                           height: 38,
-                          decoration:  BoxDecoration(
+                          decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(19)
-                          ),
+                              borderRadius: BorderRadius.circular(19)),
                           child: const Image(
                             width: 38,
                             height: 38,
-                            image:  AssetImage("lib/assets/images/avatar.png"),
+                            image: AssetImage("assets/images/avatar.png"),
                           ),
                         ),
                       ],
@@ -87,7 +89,7 @@ class Header extends StatelessWidget {
             child: Image(
               width: screenSize.width,
               height: 240,
-              image: const AssetImage("lib/assets/images/bg.png"),
+              image: const AssetImage("assets/images/bg.png"),
             ))
       ],
     );

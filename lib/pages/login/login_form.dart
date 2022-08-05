@@ -46,7 +46,7 @@ class _loginFormState extends State<LoginForm> {
                // icon: Icon(Icons.person),
                hintText: "请输入用户名或手机号",
                labelText: "用户名/手机号",
-               contentPadding: EdgeInsets.symmetric(vertical: 15)
+               // contentPadding: EdgeInsets.symmetric(vertical: 15)
              ),
            ),
            const SizedBox(height: 25,),
@@ -56,7 +56,7 @@ class _loginFormState extends State<LoginForm> {
                  // icon: Icon(Icons.lock),
                  hintText: "请输入密码",
                  labelText: "密码",
-                 contentPadding: EdgeInsets.symmetric(vertical: 15)
+                 // contentPadding: EdgeInsets.symmetric(vertical: 15)
              ),
            ),
            const SizedBox(height: 24,),
