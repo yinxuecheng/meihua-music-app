@@ -10,21 +10,17 @@ void main() {
 class MeiHuaMusic extends StatelessWidget {
   const MeiHuaMusic({super.key});
 
-  // This widget is the root of your application.
+  // This widgets is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '梅花音乐',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: primary,
-        tabBarTheme: tabBarTheme
-      ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const HomePage(),
-        '/login': (context)=> const LoginPage(),
-      }
-    );
+        title: '梅花音乐',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(primarySwatch: primary, tabBarTheme: tabBarTheme),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const HomePage(),
+          '/login': (context) => const LoginPage(),
+        });
   }
 }
