@@ -23,7 +23,11 @@ const TabBarTheme tabBarTheme = TabBarTheme(
   unselectedLabelColor: Color(0xFF7A869A),
 );
 
-const TextStyle primaryText = TextStyle(fontSize: 16, color: Color(0xFF002150));
+const Color primaryTextColor = Color(0xFF002150);
+
+const Color secondaryTextColor = Color(0xFF7A869A);
+
+const TextStyle primaryText = TextStyle(fontSize: 16, color: primaryTextColor);
 
 const TextStyle secondaryText =
-    TextStyle(fontSize: 12, color: Color(0xFF7A869A));
+    TextStyle(fontSize: 12, color: secondaryTextColor);

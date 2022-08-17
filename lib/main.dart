@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meihua_music_app/pages/home/home_page.dart';
 import 'package:meihua_music_app/pages/login/login_page.dart';
+import 'package:meihua_music_app/pages/playlist/detail_page.dart';
 import 'package:meihua_music_app/theme.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MeiHuaMusic extends StatelessWidget {
         routes: {
           '/': (context) => const HomePage(),
           '/login': (context) => const LoginPage(),
+          '/playlist/detail': (context) => const PlaylistDetailPage(),
         });
   }
 }

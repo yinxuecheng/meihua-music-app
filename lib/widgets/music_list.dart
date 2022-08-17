@@ -13,7 +13,7 @@ class MusicList extends StatelessWidget {
         children: const <Widget>[
           MusicCard(
             cover: "assets/images/musician-photo.png",
-            name: "周杰伦",
+            name: "夜曲",
             album: "十一月的肖邦",
             artist: "周杰伦",
           ),
